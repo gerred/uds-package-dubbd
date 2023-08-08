@@ -14,6 +14,8 @@ else
     --k3s-arg "--disable=servicelb@server:*" \
     --volume /tmp/dubbd:/var/lib/rancher/k3s/storage@all \
     --volume /etc/machine-id:/etc/machine-id \
+    --image ghcr.io/runyontr/packages/rancher/k3s:v1.27.3-k3s1-cuda \
+    --gpus all \
     ${K3D_CLUSTER_NAME}
 fi
 # Write or merge kubeconfig(s) from k3d cluster(s) into kubeconfig file,

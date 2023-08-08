@@ -18,3 +18,4 @@ package:
       cert_file: bigbang.dev.cert
       # -- k3d host path
       host_path: "/var/lib/rancher/k3s/storage/*"
+      approved_registries: "ghcr.io/runyontr/* | ghcr.io/defenseunicorns/* | nvcr.io/nvidia/k8s/* | semitechnologies/*"
